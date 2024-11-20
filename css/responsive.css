@@ -1,0 +1,239 @@
+
+/* Media Query For Device 768 px  ------------------*/
+
+@media screen and (max-width:880px) {
+	.wrapper {
+			grid-template-areas:
+					"header header header header header"
+					"features features features features features"
+					". services services services ."
+					"action action action action action"
+					". price price price ."
+					". about about about ."
+					"testimonials testimonials testimonials testimonials testimonials"
+					"footer footer footer footer footer"
+			;
+			text-align: center;
+			margin: auto;
+	}
+	header ul li{
+		padding:17px 10px;
+	}
+	.header-title h1 {
+			font-size: 3rem;
+	}
+	.header-pargraph p {
+			max-width: 450px;
+	}
+	.feature-content{
+		display:grid;
+		grid-template-columns:repeat(2,1fr);
+		
+	}
+	.feature-box{
+		max-width:300px;
+	}
+	.feature-apple .img-apple img{
+		width:100%;
+		height:auto;
+	}
+	.feature-apple{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	.feature-apple .quick{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		max-width:350px;
+	}
+	.feature-apple .quick .quick-box-a{
+		display:flex;
+		flex-direction:column;
+	}
+
+	.services-content{
+		display:grid;
+		grid-template-columns:repeat(2,1fr);
+	}
+	.price-content{
+		display:grid;
+		grid-template-columns:repeat(1,1fr);
+		grid-auto-rows:1fr;
+	}
+	.price-box{
+		padding:40px;
+	}
+	.price-box h3,h4{
+		padding:0 60px;
+	} 
+	.about-content{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+	}
+	.footer .copyright span{
+		font-size:1.6rem;
+	}
+}
+
+/* Media Query For Device 576 px  ------------------*/
+
+@media screen and (max-width:576px) {
+	.wrapper {
+
+			grid-template-areas:
+					"header header header header header"
+					"features features features features features"
+					". services services services ."
+					"action action action action action"
+					". price price price ."
+					". about about about ."
+					"testimonials testimonials testimonials testimonials testimonials"
+					"footer footer footer footer footer"
+			;
+			text-align: center;
+			margin: auto;
+	}
+	header ul li{
+		padding:5px 10px;
+	}
+	.header-title h1 {
+			font-size: 3rem;
+	}
+	.header-pargraph p {
+			max-width: 450px;
+	}
+	.feature-content{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	.feature-apple .img-apple{
+		max-width:400px;
+		height:auto;
+	}
+	.feature-apple .img-apple img{
+		max-width:100%;
+		height:auto;
+	}
+	.feature-apple{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		padding:40px;
+	}
+	.feature-apple .quick{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+	.feature-apple .quick .quick-box-a{
+		display:flex;
+		flex-direction:column;
+	}
+
+	.services-content{
+		display:grid;
+		grid-template-columns:repeat(2,1fr);
+	}
+	.price-content{
+		display:grid;
+		grid-template-columns:repeat(1,1fr);
+		grid-auto-rows:1fr;
+	}
+	.price-box{
+		padding:40px;
+	}
+	.price-box h3,h4{
+		padding:0 60px;
+	} 
+	.about-content{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+	}
+	.footer .copyright span{
+		font-size:1.1rem;
+	}
+}
+
+
+
+
+/* Media Query For Device 480 px  ------------------*/
+
+@media screen and (max-width:480px) {
+    .wrapper {
+
+        grid-template-areas:
+            "header header header header header"
+            "features features features features features"
+            ". services services services ."
+            "action action action action action"
+            ". price price price ."
+            ". about about about ."
+            "testimonials testimonials testimonials testimonials testimonials"
+            "footer footer footer footer footer"
+        ;
+        text-align: center;
+        margin: auto;
+    }
+		header ul li{
+			padding:14px 10px;
+		}
+    .header-title h1 {
+        font-size: 2rem;
+    }
+    .header-pargraph p {
+        max-width: 350px;
+    }
+		.feature-content{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+		}
+		.feature-apple .img-apple img{
+			width:80%;
+			height:auto;
+		}
+		.feature-apple{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+		}
+		.feature-apple .quick{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+			max-width:350px;
+		}
+		.feature-apple .quick .quick-box-a{
+			display:flex;
+			flex-direction:column;
+		}
+
+		.services-content{
+			display:grid;
+			grid-template-columns:repeat(2,1fr);
+
+		}
+		.price-content{
+			display:grid;
+			grid-template-columns:repeat(1,1fr);
+			grid-auto-rows:1fr;
+		}
+		.about-content{
+			display:flex;
+			flex-direction:column;
+		}
+		.footer .copyright span{
+			font-size:1.1rem;
+		}
+}

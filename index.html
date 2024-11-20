@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  Start Style CSS -->
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <!--  End Style CSS -->
+  <title> BS-Temp-3 | Osama Sady Dalloul</title>
+</head>
+
+<body>
+  <!--  Start Header  -->
+  <nav class="navbar navbar-expand-lg grad-color fixed-top" id="navbar-example2">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Eygption Tourisim</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#scrollspyHeading1">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#scrollspyHeading2">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#scrollspyHeading3">Thanks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#scrollspyHeading4">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#scrollspyHeading5">Joint Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="nav-trip">T</span>rips
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">CAIRO</a></li>
+              <li><a class="dropdown-item" href="#">ALEX</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">LUXOR</a></li>
+              <li><a class="dropdown-item" href="#">ASWAN</a></li>
+              <li><a class="dropdown-item" href="#">SHARM EL SHIKH</a></li>
+              <li><a class="dropdown-item" href="#">EL GLALA</a></li>
+              <li><a class="dropdown-item" href="#">MORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form id="nav-media" class="d-flex" role="search">
+          <input class="input-search form-control me-2 nav-input" type="search" placeholder="Search" aria-label="Search">
+          <div id="nav-btn" class="d-flex ">
+            <button class="btn-search btn-color btn nav-button mx-2" type="submit">Search</button>
+            <button type="button" class="btn-color btn nav-button" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" data-bs-whatever="@fat">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="soial-media d-flex flex-column align-items-center" id="soialMedia">
+      <i class="fa fa-facebook-square fa-3x"></i>
+      <i class="fa fa-whatsapp fa-3x"></i>
+      <i class="fa fa-twitter fa-3x"></i>
+      <i class="fa fa-linkedin fa-3x"></i>
+      <i class="fa fa-instagram fa-3x"></i>
+      <div class="media-cog gra-color" id="mediaCog">
+        <i class="fa fa-cog fa-2x" id="iconCog" onclick="openCog();"></i><span class="text-center text-white" style="font-size: 20px;font-weight: bold;">Media</span>
+        <i class="fa fa-close fa-2x" id="closeBar" style="display: none;" onclick="closeCog();"></i>
+      </div>
+    </div>
+    
+  </nav>
+  <!--  End Header  -->
+
+  <!--  Start slider  -->
+  <div id="mySlide" class="carousel slide"
+    data-bs-ride="carousel" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mySlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mySlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mySlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#mySlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- slide #1 -->
+      <div class="carousel-item active">
+        <img src="./images/cover_17.jpeg" class="d-block w-100" alt="cairo pyramid" draggable="false">
+        <div class="carousel-caption d-xs-block d-md-block">
+          <h5 class="slide-title  text-uppercase">cairo</h5>
+          <p class="slide-par  text-capitalize">
+            thanks cairo eygpt capital
+          </p>
+          <a href="#" class="btn btn-color">visit us</a>
+        </div>
+      </div>
+      <!-- slide #2 -->
+      <div class="carousel-item">
+        <img src="./images/cover_2.jpeg" class="d-block w-100" alt="sharm el shikh" draggable="false">
+        <div class="carousel-caption d-xs-block d-md-block">
+          <h5 class="slide-title text-uppercase">sharm el shikh</h5>
+          <p class="slide-par text-capitalize">
+            we love this city
+          </p>
+          <a href="#" class="btn btn-color">visit us</a>
+        </div>
+      </div>
+      <!-- slide #3 -->
+      <div class="carousel-item">
+        <img src="./images/cover_12.jpeg" class="d-block w-100" alt="el glalh" draggable="false">
+        <div class="carousel-caption d-xs-block d-md-block">
+          <h5 class="slide-title text-uppercase">el glalh</h5>
+          <p class="slide-par text-capitalize">
+            we love this city
+          </p>
+          <a href="#" class="btn btn-color">visit us</a>
+        </div>
+      </div>
+      <!-- slide #4 -->
+      <div class="carousel-item">
+        <img src="./images/cover_5.jpeg" class="d-block w-100" alt="mersa matroh" draggable="false">
+        <div class="carousel-caption d-xs-block d-md-block">
+          <h5 class="slide-title text-uppercase">mersa matroh</h5>
+          <p class="slide-par text-capitalize">
+           we love this city
+          </p>
+          <a href="#" class="btn btn-color">visit us</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mySlide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mySlide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--  End slider  -->
+
+  <!--  Start Welcome  -->
+  <section class="welcome px-4 ">
+    <div class="container">
+      <div class="wel-title" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <h4 class="text-uppercase pt-3" id="scrollspyHeading1">
+          welcome
+        </h4>
+        <p class="text-capitalize">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolor rerum maiores quisquam quas incidunt iste quaerat earum nemo assumenda, autem veritatis.
+        </p>
+        <a href="#">
+          <button class="btn btn-color mb-4 text-capitalize ">
+            read more
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--  End Welcome  -->
+
+  <!--  Start  Destination  -->
+  <section class="destination mt-2 p-4">
+    <div class="container">
+      <div class="des-title">
+        <h3 class="text-capitalize pt-3 pb-3">
+          popular destination in eygpty
+        </h3>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button text-uppercase fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              giza city
+            </button>
+          </button>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body fs-6">
+              <strong class=" des-strong fs-6 text-uppercase ">giza city, </strong> major tourist destination
+              include the millennia-old mountains in the Nile Vally among them are the
+              pyramids and great sphinxs at Giza
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fs-2 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              luxor city
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body fs-6">
+              <strong class=" des-strong fs-6 text-uppercase ">luxor city, </strong> major tourist destination
+              include the millennia-old mountains in the Nile Vally among them are the
+              pyramids and great sphinxs at Giza
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed text-uppercase fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              sina peninsula
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse mb-5" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body fs-6">
+              <strong class=" des-strong fs-6 text-uppercase ">sina peninsula, </strong> major tourist destination
+              include the millennia-old mountains in the Nile Vally among them are the
+              pyramids and great sphinxs at Giza
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  End Destination  -->
+
+  <!--  Start Translate  -->
+  <section class="translate mt-2 px-4 pb-3">
+    <div class="container">
+      <div class="box">
+        <h3 class="text-capitalize pt-4">translate from arabic to english</h3>
+        <div class="trans-box">
+          <p class="px-3 text-capitalize">
+            write to translate <a href="#" class="text-capitalize
+              text-decoration-none">press here !</a>
+          </p>
+          <button type="button" class="btn-copy btn btn-color mb-3" id="popoverButton" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Copied">
+           copy
+          </button>
+          <div class="trans-area">
+            <textarea rows="5" class="w-100"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3 class="text-capitalize pt-4">translate from arabic to frensh</h3>
+        <div class="trans-box">
+          <p class="px-3 text-capitalize">
+            write to translate <a href="#" class="text-capitalize
+              text-decoration-none">press here !</a>
+          </p>
+          <button type="button" class="btn-copy btn btn-color mb-3" id="popoverButton_1" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Copied">
+            copy
+           </button>
+          <div class="trans-area">
+            <textarea rows="5" class="w-100"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <h3 class="text-capitalize pt-4">translate from arabic to germany</h3>
+        <div class="trans-box">
+          <p class="px-3 text-capitalize">
+            write to translate <a href="#" class="text-capitalize
+              text-decoration-none">press here !</a>
+          </p>
+          <button type="button" class="btn-copy btn btn-color mb-3" id="popoverButton_2" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Copied">
+            copy
+           </button>
+          <div class="trans-area">
+            <textarea rows="5" class="w-100"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  End Translate  -->
+
+  <!--  Start Visit Cards -->
+  <section class="visit" style="background-image: url('./images/cover_17.jpeg')">
+    <div class="visit-header mt-3 mb-3 pt-3 pb-3 text-center " data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h3 class="text-uppercase text-white " id="scrollspyHeading2">popular destination in eygpt</h3>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- Top Card -->
+        <div class="col-12  col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 xs-media">
+          <div class="box mb-3 mt-5">
+            <div class="card w-100">
+              <img src="./images/des_1.jpeg" class="card-img-top d-block w-100" alt="des
+              cairo">
+              <div class="card-body d-flex justify-content-between">
+                <div>
+                  <h5 class="card-title text-uppercase">al auqsor</h5>
+                  <p class="card-text text-capitalize">
+                    nice city for monuments
+                  </p>
+                </div>
+                <a href="#" class="btn btn-color text-capitalize d-inline">know more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+          <div class="box mb-3 mt-5">
+            <div class="card w-100">
+              <img src="./images/des_8.jpeg" class="card-img-top d-block w-100" alt="des
+              cairo">
+              <div class="card-body d-flex justify-content-between">
+                <div>
+                  <h5 class="card-title text-uppercase">mersy matroh</h5>
+                  <p class="card-text text-capitalize">
+                    nice destination for sea beach
+                  </p>
+                </div>
+                <a href="#" class="btn btn-color text-capitalize d-inline">know more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+          <div class="box mb-3 mt-5">
+            <div class="card w-100">
+              <img src="./images/des_5.jpg" class="card-img-top d-block w-100" alt="des
+              cairo">
+              <div class="card-body d-flex justify-content-between">
+                <div>
+                  <h5 class="card-title text-uppercase">cairo payramids</h5>
+                  <p class="card-text text-capitalize">
+                    capital of eygpt
+                  </p>
+                </div>
+                <a href="#" class="btn btn-color text-capitalize d-inline">know more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+          <div class="box mb-3 mt-5">
+            <div class="card w-100">
+              <img src="./images/des_2.jpg" class="card-img-top d-block w-100" alt="des
+              cairo">
+              <div class="card-body d-flex justify-content-between">
+                <div>
+                  <h5 class="card-title text-uppercase">cairo nile river</h5>
+                  <p class="card-text text-capitalize">
+                    wonderfull looks 
+                  </p>
+                </div>
+                <a href="#" class="btn btn-color text-capitalize d-inline">know more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+          <div class="box mb-3 mt-5">
+            <div class="card w-100">
+              <img src="./images/des_26.jpeg" class="card-img-top d-block w-100" alt="des
+              cairo">
+              <div class="card-body d-flex justify-content-between">
+                <div>
+                  <h5 class="card-title text-uppercase">red sea</h5>
+                  <p class="card-text text-capitalize">
+                    beauty of nature of water
+                  </p>
+                </div>
+                <a href="#" class="btn btn-color text-capitalize d-inline">know more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+          <div class="box mb-3 mt-5">
+            <div class="card w-100">
+              <img src="./images/des_10.jpeg" class="card-img-top d-block w-100" alt="des
+              cairo">
+              <div class="card-body d-flex justify-content-between">
+                <div>
+                  <h5 class="card-title text-uppercase">alexandria</h5>
+                  <p class="card-text text-capitalize">
+                    nice beatifull city
+                  </p>
+                </div>
+                <a href="#" class="btn btn-color text-capitalize d-inline">know more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- Bottom Card -->
+          <div class="row d-flex justify-content-around">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+              <div class="box mb-3 mt-5">
+                <div class="card w-100">
+                  <img src="./images/des_14.jpg" class="card-img-top d-block w-100" alt="des
+                  cairo">
+                  <div class="card-body d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title text-uppercase">cairo</h5>
+                      <p class="card-text text-capitalize">
+                        capital of eygpt
+                      </p>
+                    </div>
+                    <a href="#" class="btn btn-color text-capitalize d-inline">know more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+              <div class="box mb-3 mt-5">
+                <div class="card w-100">
+                  <img src="./images/des_23.jpeg" class="card-img-top d-block w-100" alt="des
+                  cairo">
+                  <div class="card-body d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title text-uppercase">cairo</h5>
+                      <p class="card-text text-capitalize">
+                        capital of eygpt
+                      </p>
+                    </div>
+                    <a href="#" class="btn btn-color text-capitalize d-inline mb-0">know more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  End Visit cards -->
+
+  <!--  Start Visit bottom Cards -->
+  <section class="visit-bottom" style="background-image: url('./images/cover_6.jpeg')">
+  </section>
+  <!--  End Visit bottom Cards -->
+
+  <!-- Start Thanks -->
+  <section class="thanks bg-white">
+    <div class="visit-bottom-title" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h3 class="text-uppercase p-3 text-center" id="scrollspyHeading3">thanks for</h3>
+    </div>
+    <div class="container">
+      <div class="row py-3">
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+          <div class="box">
+            <div class="bg-img"
+              style="background-image:url('./images/th_2.jpg'); no-repeat">
+              <div class="thanks-overlay">
+                <h5 class="over-title px-3 py-3 text-capitalize">all thanks and appreciation</h5>
+                <div class="d-flex">
+                  <i class="fa fa-clock px-3"></i>
+                  <h6>october 15 2024</h6>
+                </div>
+                
+              </div>
+              <div class="thanks-img px-3">
+                <img class="" src="./images/th_2.jpg" alt="">
+                <p class="text-capitalize">
+                  eng mohamed islam
+                </p>
+                <p class="text-capitalize">
+                  director of UI/UX
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+          <div class="box">
+            <div class="bg-img" style="background-image:url('./images/th_5.jpg'); no-repeat ">
+              <div class="thanks-overlay">
+                <h5 class="over-title px-3 py-3 text-capitalize">all thanks and appreciation</h5>
+                <div class="d-flex">
+                  <i class="fa fa-clock px-3"></i>
+                  <h6>october 15 2024</h6>
+                </div>
+                
+              </div>
+              <div class="thanks-img px-3">
+                <img src="images/th_5.jpg" alt="">
+                <p class="text-capitalize">
+                  eng mohamed islam
+                </p>
+                <p class="text-capitalize">
+                  director of UI/UX
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-0 col-xxl-4">
+          <div class="box">
+            <div class="bg-img" style="background-image:url('./images/th_3.jpg'); no-repeat;">
+              <div class="thanks-overlay">
+                <h5 class="over-title px-3 py-3 text-capitalize">all thanks and appreciation</h5>
+                <div class="d-flex">
+                  <i class="fa fa-clock px-3"></i>
+                  <h6>october 15 2024</h5>
+                </div>
+              </div>
+              <div class="thanks-img px-3">
+                <img class="" src="images/th_3.jpg" alt="">
+                <p class="text-capitalize">
+                  eng mohamed islam
+                </p>
+                <p class="text-capitalize">
+                  director of UI/UX
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Thanks -->
+
+  <!-- Start Eygpt News -->
+  <section class="news">
+    <div class="news-title-1 py-3" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h3 class="text-uppercase text-center" id="scrollspyHeading4">eygpt news</h3>
+    </div>
+    <div class="container">
+      <div class="row ">
+        <!-- image card 1 -->
+         <div class="card d-flex flex-row  p-0 ">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7 order-sm-2 order-lg-1 news-order-2">
+            <div class="box mb-2">
+              <div class="news-content px-3">
+                <h4 class=" text-capitalize">red sea beach</h4>
+                <div class="news-title news-after">
+                  <i class="fa fa-calendar">
+                    <span>Mon, May 25th 2024</span>
+                  </i>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa cum laborum quo, fuga magnam esse dolor
+                    necessitatibus rerum quas perspiciatis voluptatibus, vitae. Animi veniam cum, sit magni soluta
+                    similique consequuntur ratione modi sunt! Quibusdam totam a, quia officiis doloremque dicta.
+                  </p>
+                </div>
+                <div class="news-icon d-flex justify-content-start text-light">
+                  <div class="news-tag btn-color mx-2 p-2">
+                    <i class="fa fa-tag"></i>
+                    <span>poscats</span>
+                  </div>
+                  <div class="news-min btn-color mx-2 p-2">
+                    <i class="fa fa-clock"></i>
+                    <span>56 min</span>
+                  </div>
+                  <div class="news-play btn-color p-2 mx-2 my-0">
+                    <i class="fa fa-play"></i>
+                    <span>Play Epsode</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-5  order-sm-1 order-lg-2 news-order-1">
+            <div class="box">
+              <div class="news-img">
+                <img src="./images/news_1.jpeg" class="news-clip-left d-block w-100 rounded-2" alt="news-image">
+              </div>
+            </div>
+          </div>
+         </div>
+        
+        <!-- image card 2 -->
+         <div class="card d-flex flex-row p-0">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-5 order-sm-1 order-lg-1">
+            <div class="box">
+              <div class="news-img ">
+                <img src="./images/news_2.jpg" class="news-clip-right d-block w-100 rounded-2" alt="news-image">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7 order-sm-2 order-lg-2">
+            <div class="box">
+              <div class="news-content px-3">
+                <h4 class=" text-capitalize">cairo payramids</h4>
+                <div class="news-title news-after">
+                  <i class="fa fa-calendar">
+                    <span>Mon, May 25th 2024</span>
+                  </i>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa cum laborum quo, fuga magnam esse dolor
+                    necessitatibus rerum quas perspiciatis voluptatibus, vitae. Animi veniam cum, sit magni soluta
+                    similique consequuntur ratione modi sunt! Quibusdam totam a, quia officiis doloremque dicta.
+                  </p>
+                </div>
+                <div class="news-icon d-flex justify-content-start text-light">
+                  <div class="news-tag btn-color mx-2 p-2">
+                    <i class="fa fa-tag"></i>
+                    <span>poscats</span>
+                  </div>
+                  <div class="news-min btn-color mx-2 p-2">
+                    <i class="fa fa-clock"></i>
+                    <span>56 min</span>
+                  </div>
+                  <div class="news-play btn-color p-2 mx-2">
+                    <i class="fa fa-play"></i>
+                    <span>Play Epsode</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <!-- image card 3 -->
+          <div class="card d-flex flex-row p-0">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7 order-sm-2 order-lg-1 news-order-2">
+              <div class="box">
+                <div class="news-content px-3">
+                  <h4 class="text-capitalize">alskandria city</h4>
+                  <div class="news-title news-after ">
+                    <i class="fa fa-calendar">
+                      <span>Mon, May 25th 2024</span>
+                    </i>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa cum laborum quo, fuga magnam esse dolor
+                      necessitatibus rerum quas perspiciatis voluptatibus, vitae. Animi veniam cum, sit magni soluta
+                      similique consequuntur ratione modi sunt! Quibusdam totam a, quia officiis doloremque dicta.
+                    </p>
+                  </div>
+                  <div class="news-icon d-flex justify-content-start text-light">
+                    <div class="news-tag btn-color mx-2 p-2">
+                      <i class="fa fa-tag"></i>
+                      <span>poscats</span>
+                    </div>
+                    <div class="news-min btn-color mx-2 p-2">
+                      <i class="fa fa-clock"></i>
+                      <span>56 min</span>
+                    </div>
+                    <div class="news-play btn-color p-2 mx-2">
+                      <i class="fa fa-play"></i>
+                      <span>Play Epsode</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-5 order-sm-1 order-lg-2 news-order-1">
+              <div class=" box">
+                <div class="news-img ">
+                  <img src="./images/news_3.jpg" class="news-clip-left d-block w-100 rounded-2" alt="news-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- image card 4 -->
+         <div class="card d-flex flex-row p-0">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-5 order-sm-7">
+            <div class=" box">
+              <div class="news-img ">
+                <img src="./images/news_4.jpeg" class="news-clip-right d-block w-100 rounded-2" alt="news-image">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7 order-sm-8">
+            <div class="box">
+              <div class="news-content px-3">
+                <h4 class=" text-capitalize">cario Masjed</h4>
+                <div class="news-title news-after">
+                  <i class="fa fa-calendar">
+                    <span>Mon, May 25th 2024</span>
+                  </i>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa cum laborum quo, fuga magnam esse dolor
+                    necessitatibus rerum quas perspiciatis voluptatibus, vitae. Animi veniam cum, sit magni soluta
+                    similique consequuntur ratione modi sunt! Quibusdam totam a, quia officiis doloremque dicta.
+                  </p>
+                </div>
+                <div class="news-icon d-flex justify-content-start text-light">
+                  <div class="news-tag btn-color mx-2 p-2">
+                    <i class="fa fa-tag"></i>
+                    <span>poscats</span>
+                  </div>
+                  <div class="news-min btn-color mx-2 p-2">
+                    <i class="fa fa-clock"></i>
+                    <span>56 min</span>
+                  </div>
+                  <div class="news-play btn-color p-2 mx-2">
+                    <i class="fa fa-play"></i>
+                    <span>Play Epsode</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Eygpt News -->
+
+  <!--  Start Joint Us -->
+  <section class="joint bg-white text-center " id="scrollspyHeading5">
+    <div class="joint-title pt-3 pb-3" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h4 class="text-uppercase " >joint us</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+          <div class="box text-center mt-5 mb-5">
+            <h3 class="pt-3 text-capitalize text-white">subscribe now</h3>
+            <div class="twit-img">
+              <img class="d-block" src="./images/tele.png" alt="">
+            </div>
+            <a href="#" class="text-decoration-none btn btn-color mb-3
+              text-capitalize">go to link</a>
+          </div>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+          <div class="box text-center mt-5 mb-5">
+            <h3 class="pt-3 text-capitalize text-white">subscribe now</h3>
+            <div class="twit-img">
+              <img class="d-block" src="./images/w.png" alt="">
+            </div>
+            <a href="#" class="text-decoration-none btn btn-color mb-3
+              text-capitalize">go to link</a>
+          </div>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+          <div class="box text-center mt-5 mb-5">
+            <h3 class="pt-3 text-capitalize text-white">subscribe now</h3>
+            <div class="twit-img">
+              <img class="d-block" src="./images/in.png" alt="">
+            </div>
+            <a href="#" class="text-decoration-none btn btn-color mb-3
+              text-capitalize">go to link</a>
+          </div>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+          <div class="box text-center mt-5 mb-5">
+            <h3 class="pt-3 text-capitalize text-white">subscribe now</h3>
+            <div class="twit-img ">
+              <img class="d-block" src="./images/inest.png" alt="">
+            </div>
+            <a href="#" class="text-decoration-none btn btn-color mb-3
+              text-capitalize">go to link</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  </section>
+  <!--  End Joint Us -->
+
+  <!-- Start Footer -->
+  <footer class="mt-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="box d-flex jsutify-content-center align-items-center p-3">
+            <img src="./images/logo_1.jpg" class="d-block w-100 " alt="">
+            <h3 class="text-capitalize px-3 text-white py-3">good company</h3>
+          </div>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="box d-flex jsutify-content-center align-items-center p-3">
+            <img src="./images/logo_1.jpg" class="d-block w-100" alt="">
+            <h3 class="text-capitalize px-3 text-white py-3">important links</h3>
+          </div>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="box d-flex jsutify-content-center align-items-center p-3">
+            <img src="./images/logo_1.jpg" class="d-block w-100 " alt="">
+            <h3 class="text-capitalize px-3 text-white py-3">vision</h3>
+          </div>
+        </div>
+      </div>
+      <hr class="border border-primary border-3 opacity-75">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box-b p-2">
+            <p class="text-capitalize text-white">
+              tel:000-0000-000
+            </p>
+            <p class="text-capitalize text-white">
+              <span  class="text-capitalize">address:<span>eygpt</span></span>
+            </p>
+            <p class="text-capitalize text-white">
+              fax:000-0000-000
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-b p-2">
+            <p class="text-capitalize text-white">
+              visit us
+            </p>
+            <p class="text-capitalize text-white">
+              take alook
+            </p>
+            <p class=" text-capitalize text-white">
+              your health is more important
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-b p-2">
+            <p class=" text-capitalize text-white">
+              service for all
+            </p>
+            <p class="text-capitalize text-white">
+              provide best service
+            </p>
+            <p class=" text-capitalize text-white">
+              you will be better then take care
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="border border-primary border-3 opacity-75">
+      <div class="row">
+        <p class="text-capitalize btn-color p-2 rounded-2">
+          <span class="text-uppercase">copyright &copy;</span>2024  by Osama
+          sady dalloul with wtd company</span>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Start Modal Login For Navbar -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email Address:</label>
+              <input type="email" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" id="message-text"></input>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Remmber
+                Me</label>
+            </div>
+            <li class="list-unstyled">
+              <hr class="dropdown-divider">
+              </hr>
+              </hr>
+          </form>
+          <div class="modal-footer d-flex justify-content-between">
+            <button type="button" class="btn-copy btn btn-color" data-bs-dismiss="modal">Login</button>
+            <button type="button" class="btn-copy btn btn-color">Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+<!-- End Modal Login For Navbar -->
+
+<!-- Start Modal For Copy Button / trigger modal -->
+<div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title ml-auto" id="exampleModalLabel">Osama Sady Dalloul form <br>WTD Company</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="text-center">تم نسخ النص  للترجمه </h5>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-copy btn-color" data-bs-dismiss="modal">Ok</button>
+              <!-- <button type="button" class="btn btn-primary" id="saveChanges">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- End Modal for Copy Button / trigger modal -->
+
+<!-- Start Scoll To Top -->
+<div class="scroll-top" id="scrTop">
+<i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+</div> 
+<!-- End Scoll To Top -->
+
+      <!-- Start Bootstrap Js files -->
+      <script src="./js/popper.min.js">
+      </script>
+      <script src="./js/bootstrap.min.js.map">
+      </script>
+      <script src="./js/bootstrap.bundle.min.js">
+      </script>
+      <script src="./js/script.js">
+      </script>
+    </body>
+  </html>
